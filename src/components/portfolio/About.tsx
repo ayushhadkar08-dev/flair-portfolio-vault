@@ -70,7 +70,7 @@ export function About() {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.3, delay: gi * 0.05 + i * 0.02 }}
-                        className="rounded-lg border border-white/10 bg-white/[0.03] px-3 py-1.5 text-sm text-foreground/90 transition-all hover:border-primary/40 hover:bg-primary/10 hover:text-foreground"
+                        className="rounded-lg border border-foreground/10 bg-foreground/[0.03] px-3 py-1.5 text-sm text-foreground/90 transition-all hover:border-primary/40 hover:bg-primary/10 hover:text-foreground"
                       >
                         {item}
                       </motion.span>

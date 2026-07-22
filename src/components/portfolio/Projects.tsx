@@ -45,7 +45,7 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
           }}
         />
         <div className="absolute inset-0 flex items-center justify-center">
-          <span className="text-6xl font-black tracking-tight text-white/20 mix-blend-overlay">
+          <span className="text-6xl font-black tracking-tight text-foreground/10 mix-blend-overlay">
             {String(index + 1).padStart(2, "0")}
           </span>
         </div>
@@ -58,7 +58,7 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
           <p className="mt-2 text-sm text-muted-foreground">{project.description}</p>
         </div>
 
-        <div className="rounded-xl border border-white/5 bg-white/[0.02] p-3">
+        <div className="rounded-xl border border-foreground/5 bg-foreground/[0.02] p-3">
           <p className="text-xs font-medium uppercase tracking-wider text-accent">Impact</p>
           <p className="mt-1 text-sm text-foreground/90">{project.impact}</p>
         </div>
@@ -67,7 +67,7 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
           {project.tech.map((t) => (
             <span
               key={t}
-              className="rounded-md bg-white/[0.04] px-2 py-1 text-xs text-muted-foreground"
+              className="rounded-md bg-foreground/[0.04] px-2 py-1 text-xs text-muted-foreground"
             >
               {t}
             </span>
@@ -79,7 +79,7 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
             href={project.github}
             target="_blank"
             rel="noreferrer"
-            className="inline-flex items-center gap-1.5 rounded-lg border border-white/10 px-3 py-2 text-xs font-medium text-foreground/90 transition-colors hover:bg-white/5"
+            className="inline-flex items-center gap-1.5 rounded-lg border border-foreground/10 px-3 py-2 text-xs font-medium text-foreground/90 transition-colors hover:bg-foreground/5"
           >
             <Github size={14} /> Code
           </a>

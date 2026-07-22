@@ -12,13 +12,14 @@ export function Hero() {
       {/* animated grid */}
       <div
         aria-hidden
-        className="pointer-events-none absolute inset-0 opacity-[0.15]"
+        className="pointer-events-none absolute inset-0 opacity-[0.5]"
         style={{
           backgroundImage:
-            "linear-gradient(oklch(1 0 0 / 0.08) 1px, transparent 1px), linear-gradient(90deg, oklch(1 0 0 / 0.08) 1px, transparent 1px)",
+            "linear-gradient(oklch(0.2 0.02 265 / 0.06) 1px, transparent 1px), linear-gradient(90deg, oklch(0.2 0.02 265 / 0.06) 1px, transparent 1px)",
           backgroundSize: "60px 60px",
           maskImage: "radial-gradient(ellipse 70% 60% at 50% 30%, black, transparent 80%)",
         }}
+
       />
 
       {/* floating blobs */}
@@ -102,7 +103,7 @@ export function Hero() {
               e.preventDefault();
               document.getElementById("work")?.scrollIntoView({ behavior: "smooth" });
             }}
-            className="inline-flex items-center gap-2 rounded-xl glass px-6 py-3 text-sm font-semibold text-foreground transition-colors hover:bg-white/10"
+            className="inline-flex items-center gap-2 rounded-xl glass px-6 py-3 text-sm font-semibold text-foreground transition-colors hover:bg-foreground/10"
           >
             View My Work
           </a>

@@ -67,7 +67,7 @@ export function Nav() {
                   }`}
                 >
                   {active === s.id && (
-                    <span className="absolute inset-0 rounded-lg bg-white/5" />
+                    <span className="absolute inset-0 rounded-lg bg-foreground/5" />
                   )}
                   <span className="relative">{s.label}</span>
                 </button>
@@ -88,7 +88,7 @@ export function Nav() {
             onClick={() => setOpen((v) => !v)}
             aria-label="Toggle menu"
             aria-expanded={open}
-            className="md:hidden rounded-lg p-2 text-foreground/80 hover:bg-white/5"
+            className="md:hidden rounded-lg p-2 text-foreground/80 hover:bg-foreground/5"
           >
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
               {open ? (
@@ -111,7 +111,7 @@ export function Nav() {
                 key={s.id}
                 onClick={() => scrollTo(s.id)}
                 className={`block w-full rounded-lg px-4 py-3 text-left text-sm ${
-                  active === s.id ? "bg-white/5 text-foreground" : "text-muted-foreground"
+                  active === s.id ? "bg-foreground/5 text-foreground" : "text-muted-foreground"
                 }`}
               >
                 {s.label}
