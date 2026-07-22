@@ -102,7 +102,7 @@ export function Hero() {
               e.preventDefault();
               document.getElementById("work")?.scrollIntoView({ behavior: "smooth" });
             }}
-            className="inline-flex items-center gap-2 rounded-xl glass px-6 py-3 text-sm font-semibold text-foreground transition-colors hover:bg-white/10"
+            className="inline-flex items-center gap-2 rounded-xl glass px-6 py-3 text-sm font-semibold text-foreground transition-colors hover:bg-foreground/10"
           >
             View My Work
           </a>

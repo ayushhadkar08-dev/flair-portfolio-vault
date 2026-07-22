@@ -96,7 +96,7 @@ export function Contact() {
                 name="message"
                 rows={5}
                 placeholder="Tell me a bit about the project…"
-                className="mt-2 w-full resize-none rounded-xl border border-white/10 bg-white/[0.03] px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground/60 outline-none transition-colors focus:border-primary/60 focus:bg-white/[0.05]"
+                className="mt-2 w-full resize-none rounded-xl border border-foreground/10 bg-foreground/[0.03] px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground/60 outline-none transition-colors focus:border-primary/60 focus:bg-foreground/[0.05]"
               />
               {errors.message && (
                 <p className="mt-1.5 text-xs text-destructive">{errors.message}</p>
@@ -128,7 +128,7 @@ export function Contact() {
             <ContactRow icon={<Twitter size={16} />} label="X (Twitter)" value="@alexmorgan" href={profile.socials.twitter} />
             <ContactRow icon={<MapPin size={16} />} label="Location" value={profile.location} />
 
-            <div className="mt-auto rounded-2xl border border-white/10 bg-gradient-to-br from-primary/10 to-accent/10 p-5">
+            <div className="mt-auto rounded-2xl border border-foreground/10 bg-gradient-to-br from-primary/10 to-accent/10 p-5">
               <div className="text-sm font-semibold text-foreground">Currently available</div>
               <div className="mt-1 text-xs text-muted-foreground">
                 Taking on new freelance and full-time opportunities for Q1.
@@ -164,7 +164,7 @@ function Field({
         name={name}
         type={type}
         placeholder={placeholder}
-        className="mt-2 w-full rounded-xl border border-white/10 bg-white/[0.03] px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground/60 outline-none transition-colors focus:border-primary/60 focus:bg-white/[0.05]"
+        className="mt-2 w-full rounded-xl border border-foreground/10 bg-foreground/[0.03] px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground/60 outline-none transition-colors focus:border-primary/60 focus:bg-foreground/[0.05]"
       />
       {error && <p className="mt-1.5 text-xs text-destructive">{error}</p>}
     </div>
@@ -183,7 +183,7 @@ function ContactRow({
   href?: string;
 }) {
   const content = (
-    <div className="flex items-center gap-3 rounded-2xl border border-white/5 bg-white/[0.02] p-4 transition-colors hover:bg-white/[0.04]">
+    <div className="flex items-center gap-3 rounded-2xl border border-foreground/5 bg-foreground/[0.02] p-4 transition-colors hover:bg-foreground/[0.04]">
       <span className="grid h-9 w-9 shrink-0 place-items-center rounded-xl bg-gradient-to-br from-primary/20 to-accent/20 text-accent">
         {icon}
       </span>
