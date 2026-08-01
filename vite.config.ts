@@ -12,4 +12,9 @@ export default defineConfig({
     // nitro/vite builds from this
     server: { entry: "server" },
   },
+  // ADD THIS VITE BLOCK HERE:
+  vite: {
+    base: '/flair-portfolio-vault/',
+  }
 });
+
